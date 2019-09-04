@@ -7,23 +7,23 @@ android {
         applicationId "com.playgoing.match"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 3
-        versionName "0.3"
+        versionCode 1
+        versionName "1.0"
     }
     signingConfigs {
 
         production {
             storeFile file("../keystore/android_release.keystore")
-            storePassword "restparimoon_release_pass"
-            keyAlias "restparimoon_release"
-            keyPassword "restparimoon_release_pass"
+            storePassword "playgoingmatch_release_pass"
+            keyAlias "playgoingmatch_release"
+            keyPassword "playgoingmatch_release_pass"
         }
 
         debug {
             storeFile file("../keystore/android_debug.keystore")
-            storePassword "restparimoon_debug_pass"
-            keyAlias "restparimoon_debug"
-            keyPassword "restparimoon_debug_pass"
+            storePassword "playgoingmatch_debug_pass"
+            keyAlias "playgoingmatch_debug"
+            keyPassword "playgoingmatch_debug_pass"
         }
     }
 
@@ -53,7 +53,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.facebook.android:facebook-android-sdk:5.0.1'
     implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.android.support:customtabs:28.0.0'
     implementation 'com.sdsmdg.tastytoast:tastytoast:0.0.4'
 }

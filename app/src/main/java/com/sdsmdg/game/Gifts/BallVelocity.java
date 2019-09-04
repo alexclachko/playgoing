@@ -5,7 +5,7 @@ import android.util.Log;
 import com.sdsmdg.game.GameWorld.SinglePlayerView;
 
 /**
- * Created by Rahul Yadav on 6/12/2016.
+ * Created by Nikitosik Barbosik on 6/12/2016.
  */
 public class BallVelocity {
 

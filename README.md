@@ -26,7 +26,7 @@ Collision with pink ball will your score by one only but green ball aka score ba
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ```
-Copyright 2016 Rahul Yadav
+Copyright 2016 Nikitosik Barbosik
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

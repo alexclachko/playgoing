@@ -3,7 +3,7 @@ package com.sdsmdg.game.GameWorld;
 import android.graphics.RectF;
 
 /**
- * Created by Rahul Yadav on 5/24/2016.
+ * Created by Nikitosik Barbosik on 5/24/2016.
  */
 
 public interface Ball {

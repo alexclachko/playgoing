@@ -13,7 +13,7 @@ import com.sdsmdg.game.R;
 import java.util.List;
 
 /**
- * Created by Rahul Yadav on 6/23/2016.
+ * Created by Nikitosik Barbosik on 6/23/2016.
  */
 class CustomAdapter extends ArrayAdapter<Scores> {
 

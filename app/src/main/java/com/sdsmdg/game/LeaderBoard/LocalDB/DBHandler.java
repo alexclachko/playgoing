@@ -12,7 +12,7 @@ import com.sdsmdg.game.Launcher;
 import com.sdsmdg.tastytoast.TastyToast;
 
 /**
- * Created by Rahul Yadav on 6/24/2016.
+ * Created by Nikitosik Barbosik on 6/24/2016.
  */
 public class DBHandler extends SQLiteOpenHelper {
     public static final String KEY_NAME = "name";

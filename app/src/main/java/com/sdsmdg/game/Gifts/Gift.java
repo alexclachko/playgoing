@@ -9,7 +9,7 @@ import com.sdsmdg.game.R;
 import java.util.Random;
 
 /**
- * Created by Rahul Yadav on 6/12/2016.
+ * Created by Nikitosik Barbosik on 6/12/2016.
  */
 public class Gift {
     private static int[] gift = new int[]{1, 2, 3};

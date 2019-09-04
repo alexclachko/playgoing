@@ -11,9 +11,6 @@ import android.view.SurfaceView;
 import com.sdsmdg.game.Launcher;
 
 
-/**
- * Created by Rahul Yadav on 5/20/2016.
- */
 public class MultiPlayerView extends SurfaceView implements SurfaceHolder.Callback, Ball {
 
     public static int radius = Launcher.width / 25;

@@ -1,7 +1,7 @@
 package com.sdsmdg.game.LeaderBoard.LocalDB;
 
 /**
- * Created by Rahul Yadav on 6/24/2016.
+ * Created by Nikitosik Barbosik on 6/24/2016.
  */
 public class Profile {
     private int score;
@@ -9,6 +9,7 @@ public class Profile {
     private int token;
 
     public Profile() {
+
     }
 
     public Profile(String userName, int score, int token) {

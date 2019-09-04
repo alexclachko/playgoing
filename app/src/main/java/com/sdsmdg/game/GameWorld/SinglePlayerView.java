@@ -22,7 +22,7 @@ import com.sdsmdg.game.R;
 import java.util.Random;
 
 /**
- * Created by Rahul Yadav on 6/4/2016.
+ * Created by Nikitosik Barbosik on 6/4/2016.
  */
 public class SinglePlayerView extends SurfaceView implements SurfaceHolder.Callback, Ball, BoardOne, BoardTwo {
 

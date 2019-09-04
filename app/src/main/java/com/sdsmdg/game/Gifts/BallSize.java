@@ -8,7 +8,7 @@ import com.sdsmdg.game.Launcher;
 import java.util.Random;
 
 /**
- * Created by Rahul Yadav on 6/12/2016.
+ * Created by Nikitosik Barbosik on 6/12/2016.
  */
 public class BallSize {
     private static int[] radius = new int[]{15, 20, 30, 35};

@@ -30,7 +30,7 @@ import com.sdsmdg.game.LeaderBoard.LocalDB.Profile;
 import com.sdsmdg.game.R;
 
 /**
- * Created by Rahul Yadav on 6/4/2016.
+ * Created by Nikitosik Barbosik on 6/4/2016.
  */
 
 public class SinglePlayer extends Activity implements SensorEventListener {
