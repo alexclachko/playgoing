@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hoodang
 Modified version of famous android game ping-pong.
 
@@ -39,3 +40,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+=======
+hey
+>>>>>>> d27a96cbf324772af25b42806751a117cecd36ff
