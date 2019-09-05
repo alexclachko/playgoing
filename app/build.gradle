@@ -12,7 +12,7 @@ android {
     }
     signingConfigs {
 
-        production {
+        release {
             storeFile file("../keystore/android_release.keystore")
             storePassword "playgoingmatch_release_pass"
             keyAlias "playgoingmatch_release"
@@ -31,14 +31,9 @@ android {
 
         release {
             minifyEnabled true
-            signingConfig signingConfigs.production
+            signingConfig signingConfigs.release
             proguardFiles 'proguard-rules.pro'
         }
-
-        debug {
-            signingConfig signingConfigs.debug
-        }
-
     }
 
     compileOptions {
