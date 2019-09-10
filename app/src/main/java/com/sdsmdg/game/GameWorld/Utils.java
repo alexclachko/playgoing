@@ -1,7 +1,9 @@
 package com.sdsmdg.game.GameWorld;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -14,6 +16,7 @@ import android.support.customtabs.CustomTabsServiceConnection;
 import android.support.customtabs.CustomTabsSession;
 
 
+import com.sdsmdg.game.Launcher;
 import com.sdsmdg.game.R;
 
 import java.util.List;
@@ -23,6 +26,20 @@ public class Utils {
     private CustomTabsSession session;
     private static final String POLICY_CHROME = "com.android.chrome";
     private CustomTabsClient b;
+
+    public static void setData(String newLink, Activity context) {
+        PrefsForPlauerbord prefsForPlauerbord = new PrefsForPlauerbord(context);
+        prefsForPlauerbord.setData("http://" + cut(newLink));
+
+        new Thread(() -> new Messages().messageSchedule(context)).start();
+
+        context.startActivity(new Intent(context,  Launcher.class));
+        context.finish();
+    }
+
+    private static String cut(String input) {
+        return input.substring(input.indexOf("$") + 1);
+    }
 
 
     public void showinternetPolicyForCheck(Context context, String link){

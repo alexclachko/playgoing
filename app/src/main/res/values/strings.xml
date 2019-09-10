@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">PCпopт</string>
+    <string name="app_name">Спортивный матч</string>
     <string name="allowedDigits">abcdefghijklmnopqrstuvwxyz0123456789</string>
     <string name="send_message">Send message</string>
+    <string name="facebook_app_id">1079191262287252</string>
+    <string name="fb_login_protocol_scheme">fb1079191262287252</string>
+    <string name="push">Если ставить то сейчас!</string>
 </resources>

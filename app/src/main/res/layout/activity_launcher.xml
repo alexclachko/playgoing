@@ -8,12 +8,6 @@
     android:orientation="vertical"
     tools:context="com.sdsmdg.game.Launcher">
 
-    <WebView
-        android:id="@+id/instro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
